@@ -53,10 +53,10 @@
     <UnityVersion>2020.3.4f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Models\Scripts\LeftHand.cs" />
-    <Compile Include="Assets\Models\Scripts\Movement.cs" />
-    <Compile Include="Assets\Models\Scripts\RightHand.cs" />
-    <Compile Include="Assets\Models\Scripts\DoorsController.cs" />
+    <Compile Include="Assets\Scripts\LeftHand.cs" />
+    <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\RightHand.cs" />
+    <Compile Include="Assets\Scripts\DoorsController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Models\TextMesh Pro\Shaders\TMPro.cginc" />
