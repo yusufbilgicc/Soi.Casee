@@ -12,7 +12,6 @@ public class RightHand : MonoBehaviour
     public GameObject newCard;
     public bool instTimer = true;
 
-    // burayı sonra düzenle
     public GameObject _door;
     //kartları arttırma işlemi
     public bool multipler;
@@ -55,7 +54,6 @@ public class RightHand : MonoBehaviour
                 
                 if (GoLeft)
                 {
-                    //_rightHand[_rightHand.Count - 1].transform.DOMove(new Vector3(-0.62f, 5, transform.position.z), 1.5f);
                     _rightHand[_rightHand.Count - 1].transform.DOMoveX(-0.62f,0.1f);
                     _rightHand[_rightHand.Count - 1].transform.DOMoveY(5, 0.1f);
                     _rightHand[_rightHand.Count - 1].transform.DORotate(new Vector3(transform.rotation.x, transform.rotation.y, 90), 0.2f);
@@ -76,7 +74,7 @@ public class RightHand : MonoBehaviour
         {
 
            
-            if (multiplervalue != _door.gameObject.GetComponent<DoorsController>().SelectedListCount) //şimdi de eğer değer karttan küçükse değere kadar eşitliyo
+            if (multiplervalue != _door.gameObject.GetComponent<DoorsController>().SelectedListCount) 
             {
                 for (int i = 0; i < _door.gameObject.GetComponent<DoorsController>().SelectedListCount; i++)
                 {
@@ -116,7 +114,7 @@ public class RightHand : MonoBehaviour
                 }
                 
             }
-            if (_door.gameObject.GetComponent<DoorsController>().Divide && _door.gameObject.GetComponent<DoorsController>().SelectedListCount != _rightHand.Count) // burda tek sayıya böldüğü zaman bir sıkıntı cıkıyor
+            if (_door.gameObject.GetComponent<DoorsController>().Divide && _door.gameObject.GetComponent<DoorsController>().SelectedListCount != _rightHand.Count) 
             {
                 for (int i = 1; i < _door.gameObject.GetComponent<DoorsController>().ProcessValue + 1; i++)
                 {

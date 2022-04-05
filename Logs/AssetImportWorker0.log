@@ -442,3 +442,65 @@ Total: 3.451300 ms (FindLiveObjects: 0.274200 ms CreateObjectMapping: 0.079500 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005797 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.469 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1264 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.8 MB.
+System memory in use after: 62.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1761.
+Total: 2.431100 ms (FindLiveObjects: 0.379700 ms CreateObjectMapping: 0.172400 ms MarkObjects: 1.801300 ms  DeleteObjects: 0.076000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 185.062069 seconds.
+  path: Assets/Models/Scripts/LeftHand.cs
+  artifactKey: Guid(3ae26c4fdfe77de4cad2c05b8e0edf6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scripts/LeftHand.cs using Guid(3ae26c4fdfe77de4cad2c05b8e0edf6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f17bfaa7ffb8a546647b3599624b8489') in 0.008448 seconds
+  Import took 0.011357 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004638 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.419 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1264 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.8 MB.
+System memory in use after: 62.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1764.
+Total: 2.173900 ms (FindLiveObjects: 0.326900 ms CreateObjectMapping: 0.129400 ms MarkObjects: 1.654700 ms  DeleteObjects: 0.060900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 43.479365 seconds.
+  path: Assets/Models/Scripts/RightHand.cs
+  artifactKey: Guid(38502de1ba33d5d43802300206d56552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Scripts/RightHand.cs using Guid(38502de1ba33d5d43802300206d56552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1319fd45dde454ddd1ddec9e41c6eaa') in 0.008197 seconds
+  Import took 0.013340 seconds .
+

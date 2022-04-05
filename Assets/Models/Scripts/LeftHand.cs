@@ -49,7 +49,6 @@ public class LeftHand : MonoBehaviour
                     if (GoRight)
                     {
 
-                        //_leftHand[_leftHand.Count-1].transform.DOMove(new Vector3(1.2f, GoY, transform.position.z), 1.5f);
                         _leftHand[_leftHand.Count - 1].transform.DOMoveX(1.2f, 0.1f);
                         _leftHand[_leftHand.Count - 1].transform.DOMoveY(5, 0.1f);
                         _leftHand[_leftHand.Count - 1].transform.DORotate(new Vector3(transform.rotation.x, transform.rotation.y,90), 0.2f);
@@ -67,7 +66,7 @@ public class LeftHand : MonoBehaviour
 
         if (multipler)
         {
-            if (multiplervalue <= _door.gameObject.GetComponent<DoorsController>().SelectedListCount + _leftHand.Count) // burası bulunan değer listeden küçükse ya da büyükse çalışıyo ikisi birden olunca sıkıntı cıkıyo
+            if (multiplervalue <= _door.gameObject.GetComponent<DoorsController>().SelectedListCount + _leftHand.Count) 
             {
                 for (int i = 0; i < _door.gameObject.GetComponent<DoorsController>().SelectedListCount; i++)
                 {
@@ -102,13 +101,11 @@ public class LeftHand : MonoBehaviour
                     {
                         Destroy(_leftHand[_leftHand.Count - 1]);
                         _leftHand.Remove(_leftHand[_leftHand.Count - 1].gameObject);
-                        //instTimer = false;
-                        StartCoroutine(InstentiateSmoothTimer());
                     }
                 }
 
             }
-            if (_door.gameObject.GetComponent<DoorsController>().Divide && _door.gameObject.GetComponent<DoorsController>().SelectedListCount != _leftHand.Count) // burda tek sayıya böldüğü zaman bir sıkıntı cıkıyor
+            if (_door.gameObject.GetComponent<DoorsController>().Divide && _door.gameObject.GetComponent<DoorsController>().SelectedListCount != _leftHand.Count) 
             {
                 for (int i = 1; i < _door.gameObject.GetComponent<DoorsController>().ProcessValue + 1; i++)
                 {
