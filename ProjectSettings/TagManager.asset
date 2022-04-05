@@ -8,6 +8,7 @@ TagManager:
   - Left
   - Card
   - Door
+  - Win
   layers:
   - Default
   - TransparentFX

@@ -10,11 +10,17 @@ public class Movement : MonoBehaviour
     public Vector2 mouse;
     public bool _left;
     public bool _right;
+    private LeftHand _leftHand;
+    private RightHand _righHand;
+
+    public GameObject Button;
 
 
     void Start()
     {
         _rigi = GetComponent<Rigidbody>();
+        _leftHand = GetComponentInChildren<LeftHand>();
+        _righHand = GetComponentInChildren<RightHand>();
 
     }
 
@@ -24,7 +30,11 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-
+        if (_leftHand._leftHand.Count == 0 && _righHand._rightHand.Count == 0)
+        {
+            Button.SetActive(true);
+            Speed = 0;
+        }
         
         mouse = new Vector2(Input.mousePosition.x, Screen.height - Input.mousePosition.y);
         _rigi.velocity = transform.forward * Speed;
@@ -53,5 +63,18 @@ public class Movement : MonoBehaviour
        
 
     }
-   
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Win")
+        {
+            Button.SetActive(true);
+            Speed = 0;
+
+        }
+    }
+    public void ReloadSceneBut()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
+
 }
